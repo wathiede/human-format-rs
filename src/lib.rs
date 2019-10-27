@@ -31,10 +31,10 @@
 //!     .format(1000000.0);
 //! # assert_eq!(tmpStr2, "1.00 M");
 //!
-//! // "1.00 B"
+//! // "1.00 G"
 //! let tmpStr3 = human_format::Formatter::new()
 //!     .format(1000000000.0);
-//! # assert_eq!(tmpStr3, "1.00 B");
+//! # assert_eq!(tmpStr3, "1.00 G");
 //! ```
 //!
 //! If you are so inspired you can even try playing with units and customizing your `Scales`
@@ -161,7 +161,7 @@ impl Scales {
                 "".to_owned(),
                 "k".to_owned(),
                 "M".to_owned(),
-                "B".to_owned(),
+                "G".to_owned(),
                 "T".to_owned(),
                 "P".to_owned(),
                 "E".to_owned(),
